@@ -1,4 +1,3 @@
-
 const list = document.querySelector("#validation-input");
 function checkInput(event) {
   if (list.value.length !== Number(list.getAttribute("data-length"))) {

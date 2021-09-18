@@ -1,4 +1,3 @@
-
 const findCategories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${findCategories.length}`);
 findCategories.forEach((item) => {
