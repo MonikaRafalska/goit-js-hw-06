@@ -13,10 +13,15 @@ const images = [
   },
 ];
 
+const gallery = document.querySelector(".gallery");
 
-const pictures = (picture) => {
-  return `<li><img src="${picture.url}" alt="${picture.alt}"></li>`;
-};
-const list = document.querySelector(".gallery");
-const makeGallery = images.map(pictures);
-const createGalleryList = (list.innerHTML = makeGallery);
+for (const key of images) {
+  console.log(key.url);
+  const makeGallery = document.createElement("li");
+  gallery.append(makeGallery);
+  const newImage = document.createElement("img");
+  newImage.src = key.url;
+  newImage.alt = key.alt;
+  makeGallery.append(newImage);
+}
+

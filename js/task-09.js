@@ -12,3 +12,4 @@ const changeColor = (event) => {
 };
 
 button.addEventListener("click", changeColor);
+

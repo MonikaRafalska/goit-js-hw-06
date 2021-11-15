@@ -7,10 +7,8 @@ function Submit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("Wypełnij wszystkie pola!");
+    alert("Wypełnij wszystkie wymagane pola!");
   }
   console.log(`Login: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 }
-
-
